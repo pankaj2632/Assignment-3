@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #c3d26c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #8fd5d7;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #8c198a;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #020000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    font-size: 20px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li.completed + li {
+    margin-top: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.progress-container {
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #28a745;
+    border-radius: 16px;
+}
+
+#progress-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #555;
+}
